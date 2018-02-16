@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
                while(i<numpi.getValue()) {
 
                     smsManager.sendTextMessage(number4,null,sms,null,null);
-                    Toast.makeText(MainActivity.this,"sms sent to number times:"+numpi.getValue(),Toast.LENGTH_SHORT).show();
-                    i--;
+                    Toast.makeText(MainActivity.this,"sms sent to number times:"+" "+i,Toast.LENGTH_SHORT).show();
+                    i++;
                 }
 
             }
